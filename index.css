@@ -1,0 +1,146 @@
+html{
+    font-size:62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    background:#DAAB1D;
+    height: 128px;	
+    width: 100%;
+    border:1px solid #979797;
+    display:flex;
+    justify-content: space-between;
+    align-items:space-evenly;
+}
+ul{
+    display:flex;
+    margin-top:40px;
+    
+    width: 50%;
+    justify-content: space-around;
+    color:#1E3A45;
+    
+}
+
+li{
+    display:list-item;
+    list-style-type: none;
+    
+}
+  a{
+    color: #1E3A45;
+    text-decoration: none;
+    font-size:2.0rem;
+    width:100%;
+}
+a :visited{
+    color: #1E3A45;
+}
+.about{ height: 27px;	width: 61px;	color: #1E3A46;	font-family: "Avenir Next";	font-size: 20px;	font-weight: bold;	line-height: 27px;}
+.faq {
+	height: 27px;
+	width: 44px;
+	color: #1E3A46;
+	
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 27px;
+}
+.create-account {
+	height: 27px;
+	width: 149px;
+	color: #1E3A46;
+
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 27px;
+}
+.sign-in {
+	height: 27px;
+	width: 67px;
+	color: #1E3A46;
+
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 27px;
+}
+nav h1{
+    color: #1E3A45;
+    font-size:3.2rem;
+    
+}
+header img{
+    width:100%;
+    opacity:0.7;
+}
+.triangle {
+	border:1px solid #C0B594;
+display:flex;
+margin-top:30px;
+margin-left:58px;
+        width: 0; 
+        height: 0; 
+        border-left: 460px solid transparent;
+        border-right: 460px solid transparent;
+        border-bottom: 260px solid #C0B594;
+        
+      
+	
+}
+.organize-your-tools {
+    margin-top:350px;
+	height: 16px;
+	width: 8px;
+	color: #1E3A46;
+	font-family: "Avenir Next";
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 38px;
+	text-align: center;
+}.rectangle {
+border:50px;
+	height: 62px;
+	width: 68px;
+	background-color: #C0B594;
+}
+.rectangle-copy {	
+    
+    height: 88px;	
+    width: 368px;
+    color:#EDE3C2;	
+    border-radius: 3px;
+    background-color: #DAAB1D;
+    border:1px solid #41340C;
+    margin-left:0;
+
+}
+
+.list-tools {
+    height: 600px;
+width: 406.9px;
+background:#DAAB1D;
+margin-right:-45px;
+    color: #41340C;
+    font-family: "Avenir Next";
+        font-size: 32px;
+            line-height: 44px;	
+            text-align: center;
+        }
+
+        .network {
+            height:44px;
+        width: 206.9px;
+        background:#DAAB1D;
+        border:1px solid #41340C;
+            color: #41340C;
+            font-family: "Avenir Next";
+                font-size: 32px;
+                    line-height: 44px;	
+                    text-align: center;
+                }
+        
+        
+
+
+
+
