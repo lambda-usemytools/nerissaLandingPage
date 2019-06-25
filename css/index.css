@@ -1,4 +1,4 @@
-html {
+import html {
   font-size: 62.5%;
   font-family: Avenir Next;
 }
@@ -76,26 +76,35 @@ header img {
 }
 .triangle {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   width: 0;
   height: 0;
-  border-left: 563px solid transparent;
-  border-right: 552px solid transparent;
-  border-bottom: 297px solid #C0B594;
-  margin-top: -296px;
-  margin-left: 17px;
+  border-left: 450px solid transparent;
+  border-right: 450px solid transparent;
+  border-bottom: 314px solid #C0B594;
+  margin-top: -345px;
+  margin-left: 109px;
   font-size: 18px;
 }
 .organize-your-tools {
   height: 0;
   width: 100%;
   color: #1E3A46;
-  font-family: "Avenir Next";
-  font-size: 28px;
   font-weight: 600;
   line-height: 8px;
   text-align: center;
   z-index: 3;
+}
+join-today {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+}
+.rectangle {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  background-color: #EDE3C2;
 }
 .rectangle-copy {
   width: 168px;
@@ -109,27 +118,20 @@ header img {
   color: #41340C;
   font-size: 28px;
   line-height: 38px;
+  background-color: #C0B594;
 }
-.list-tools {
-  height: 44px;
-  width: 206.9px;
-  color: #41340C;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
+.rectangle-copy1 {
+  height: 405px;
+  width: 1440px;
+  background-color: #C0B594;
 }
 .meet-our-users {
   width: 800px;
   color: #1E3A46;
   font-size: 28px;
   font-weight: 600;
-  line-height: 38px;
   text-align: center;
   display: flex;
-}
-.meet-our-users img {
-  width: 200%;
-  height: 200px;
 }
 .i-was-tired-of-alway {
   width: 100px;
@@ -178,6 +180,66 @@ p,
   color: #41340C;
   font-size: 18px;
   line-height: 25px;
+}
+.about-container {
+  max-width: 970px;
+  margin: auto;
+  padding: 0 30px;
+}
+#showcase {
+  height: 250px;
+  position: relative;
+  z-index: 5;
+}
+#showcase h1 {
+  font-size: 50px;
+  line-height: 1.3;
+  position: relative;
+  z-index: 5;
+  animation-name: heading;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+}
+@keyframes heading {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: 30px;
+  }
+}
+#content {
+  position: relative;
+  animation-name: content;
+  animation-duration: 10s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes content {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    right: 566px;
+  }
+}
+.triangle1 {
+  position: relative;
+  z-index: 4;
+  width: 0;
+  height: 0;
+  border-left: 550px solid transparent;
+  border-right: 550px solid transparent;
+  border-bottom: 314px solid #EDE3C2;
+  margin-top: -351px;
+  margin-left: 109px;
+  font-size: 18px;
+}
+.about-rectangle {
+  display: flex;
+  height: 586px;
+  width: 100%;
+  background-color: #EDE3C2;
 }
 .join-today {
   height: 33px;

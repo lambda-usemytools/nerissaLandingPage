@@ -1,185 +1,87 @@
+@import "variables.less";
+@import "mixins.less";
+@import "reset.less";
+@import "global.less";
+@import "navigation.less";
+@import "footer.less";
+@import "home-page.less";
+
+
 html{
     font-size:62.5%;
-    font-family:Avenir Next;
-}
-nav{
-    background:#DAAB1D;
-    height: 128px;	
-    width: 100%;
-    border:1px solid #979797;
-    display:flex;
-    justify-content: space-between;
-    align-items:space-evenly;
-}
-ul{
-    display:flex;
-    margin-top:40px;
-    
-    width: 50%;
-    justify-content: space-around;
-    color:#1E3A45;
-    
+    font-family:Open sans-serif;
 }
 
-li{
-    display:list-item;
-    list-style-type: none;
-    
-}
-  a{
-    color: #1E3A45;
-    text-decoration: none;
-    font-size:2.0rem;
-    width:100%;
-}
-a :visited{
-    color: #1E3A45;
-}
-.about{ height: 27px;	width: 61px;	color: #1E3A46;	font-family: "Avenir Next";	font-size: 20px;	font-weight: bold;	line-height: 27px;}
-.faq {
-	height: 27px;
-	width: 44px;
-	color: #1E3A46;
-	font-family: "Avenir Next";
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 27px;
-}
-.create-account {
-	height: 27px;
-	width: 149px;
-	color: #1E3A46;
-	font-family: "Avenir Next";
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 27px;
-}
-.sign-in {
-	height: 27px;
-	width: 67px;
-	color: #1E3A46;
-	font-family: "Avenir Next";
-	font-size: 20px;
-	font-weight: bold;
-	line-height: 27px;
-}
-nav h1{
-    color: #1E3A45;
-    font-size:3.2rem;
-    
-}
-header img{
-    width:100%;
-}
-.triangle {
+//About Page
+.about-container{
+    max-width:800px;
+    margin: auto;
+    padding: 0 30px;
+    @media @mobile{
+        width:90%;
+        margin:20px;
+    }
+  }
+  #showcase{
+    height: 250px;
     position:relative;
-    z-index: 2;
+    z-index:5;
+  }
+  #showcase h1{
+    font-size: 50px;
+    line-height: 1.3;
+    position: relative;
+    z-index:5;
+    animation-name:heading;
+    animation-duration:30s;
+    animation-fill-mode:forwards;
+
+  }
+  @keyframes heading{
+    0%{top:-60px}
+    100%{top:30px}
+  }
+  #content{
+      
+    position:relative;
+    animation-name: content;
+    animation-duration:10s;
+    animation-delay: 4s;
+    animation-fill-mode:forwards;
+  }
+  @keyframes content{
+    0%{left:-1000px}
+    100%{right:566px}
+  }
+  
+  
+  .triangle1 {
+    position:relative;
+    z-index: 4;
     width: 0; 
     height: 0; 
-    border-left: 563px solid transparent;
-    border-right:552px solid transparent;
-    border-bottom: 297px solid #C0B594;
-    margin-top:-296px;
-    margin-left: 17px;
+    border-left: 550px solid transparent;
+    border-right:550px solid transparent;
+    border-bottom: 314px solid #EDE3C2;
+    margin-top: -351px;
+    margin-left: 109px;
     font-size: 18px;
   
 }
 
-.organize-your-tools {
-	height: 0;
-	width: 100%;
-	color: #1E3A46;
-	font-family: "Avenir Next";
-	font-size: 28px;
-	font-weight: 600;
-	line-height: 8px;
-    text-align: center;
-    z-index:3;
+.about-rectangle {
+    display:flex;
+height: 586px;
+    width: 600px;
+        background-color: #EDE3C2;
+        @media @mobile{
+    justify-content: center;
+align-items:center;
+margin:20px auto;
 }
-.rectangle-copy {	
-        width: 168px;
-            border: 1px solid #6E5710;	
-            border-radius: 3px;	
-            background-color: #DAAB1D;
-        }
-        .with-use-my-tools-yo {	height: 342px;
-                width: 334px;
-                    color: #41340C;
-                    font-size: 28px;
-                line-height: 38px;
-        }
-.list-tools {
-    height: 44px;
-width: 206.9px;
-    color: #41340C;
-    
-        font-size: 32px;
-            line-height: 44px;	
-            text-align: center;
-        }
-        .meet-our-users {	
-            
-                width: 800px;
-                    color: #1E3A46;	
-                    font-size: 28px;
-                        font-weight: 600;	
-                        line-height: 38px;	
-                        text-align: center;
-                        display: flex;
-img{
-    width:200%;
-    height:200px;
-}
-                    }
-   .i-was-tired-of-alway  {
-            
-            width: 100px;
-            color: #41340C;
-            display:flex;
-            font-size: 18px;
-            line-height: 25px;
-            
-        }
-           p, .i-was-tired-of-alway{
-        display: flex;
-    width: 250px;
-    margin-left: 60px;
-}
-.rectangle {	height: 405px;	width: 1440px;	background-color: #EDE3C2;
-.how-it-works {
-	height: 38px;
-	width: 175px;
-	color: #1E3A46;
-	font-family: "Avenir Next";
-	font-size: 28px;
-	font-weight: 600;
-	line-height: 38px;
-	text-align: center;
-      
-.when-you-create-an-a {
-	height: 325px;
-	width: 400px;
-	color: #41340C;
-	font-family: "Avenir Next";
-	font-size: 18px;
-    line-height: 25px;
-    .a-tool-that-is-added {
-        height: 300px;
-        width: 400px;
-        color: #41340C;
-        .once-the-rental-peri {
-            height: 218px;
-            width: 400px;
-            color: #41340C;
-        
-            font-size: 18px;
-            line-height: 25px;
-        }
-        
-} 
-}
-}
-}
+}  
+   
+  
 .join-today {
 	height: 33px;
 	width: 122px;
