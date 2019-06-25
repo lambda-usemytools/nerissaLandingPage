@@ -1,17 +1,3 @@
-@import "variables.less";
-@import "mixins.less";
-@import "reset.less";
-@import "global.less";
-@import "navigation.less";
-@import "footer.less";
-@import "homepage.less";
-@import "about.less";
-
-html{
-    font-size:62.5%;
-    font-family:Open sans-serif;
-}
-
 //About Page
 .about-container{
     max-width:800px;
@@ -19,7 +5,7 @@ html{
     padding: 0 30px;
     @media @mobile{
         width:90%;
-        margin:20px;;
+        margin:20px;
     }
   }
   #showcase{
@@ -28,7 +14,7 @@ html{
     z-index:5;
   }
   #showcase h1{
-    font-size: 5.0rem;
+    font-size: 50px;
     line-height: 1.3;
     position: relative;
     z-index:5;
@@ -90,21 +76,20 @@ margin:20px auto;
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 33px;
-    
-    z-index:7;
-
-}
-	p{ display: flex;
+    text-align: center;
+    justify-content:center;
+	p{display: flex;
         width: 479px;
         margin-left: 8px;
         font-size: 1.8rem;
-    }
+    }}
 @media @mobile {
             padding: 20px;
             .about-use-my-tools {
                 height: 27px;
                 width: 186px;
                 color: #EDE3C2;
+                font-family: "Avenir Next";
                 font-size: 20px;
                 font-weight: 600;
                 line-height: 27px;

@@ -1,13 +1,3 @@
-$(document).ready(function(){
-    $('.your-class').slick({
-      setting-name: setting-value
-    });
-  });
-
-  $('.autoplay').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  });
-                  
+const joinIn = document.querySelector('.join-today').onclick = function () {
+  location.href = "https://gracious-ptolemy-4a8ec7.netlify.com/";
+};
