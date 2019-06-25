@@ -70,77 +70,163 @@ nav h1{
     
 }
 header img{
+
+    
     width:100%;
-    opacity:0.7;
+
 }
 .triangle {
-	border:1px solid #C0B594;
-display:flex;
-margin-top:30px;
-margin-left:58px;
-        width: 0; 
-        height: 0; 
-        border-left: 460px solid transparent;
-        border-right: 460px solid transparent;
-        border-bottom: 260px solid #C0B594;
-        
-      
-	
+    position:relative;
+    z-index: 2;
+    width: 0; 
+    height: 0; 
+    border-left: 563px solid transparent;
+    border-right:552px solid transparent;
+    border-bottom: 297px solid #C0B594;
+    margin-top:-296px;
+    margin-left: 17px;
+    font-size: 18px;
+  
+
 }
 .organize-your-tools {
-    margin-top:350px;
-	height: 16px;
-	width: 8px;
+	
+	width: 400px;
 	color: #1E3A46;
-	font-family: "Avenir Next";
-	font-size: 1.5rem;
+	display:inline;
+	font-size: 1.8rem;
 	font-weight: 600;
 	line-height: 38px;
-	text-align: center;
-}.rectangle {
-border:50px;
-	height: 62px;
-	width: 68px;
-	background-color: #C0B594;
-}
-.rectangle-copy {	
-    
-    height: 88px;	
-    width: 368px;
-    color:#EDE3C2;	
-    border-radius: 3px;
-    background-color: #DAAB1D;
-    border:1px solid #41340C;
-    margin-left:0;
+    text-align: center;
+    z-index:3;
 
+}
+.container{
+    display:flex;
+}
+.rectangle {
+    
+height: 547px;
+    width: 100%;
+    	background-color: #EDE3C2;
+
+}
+button .rectangle1 {
+    height: 48px;	width: 240px;	border-radius: 10px;	background-color: #488EAC;
+	
 }
 
 .list-tools {
-    height: 600px;
+    height: 80px;
 width: 406.9px;
 background:#DAAB1D;
 margin-right:-45px;
     color: #41340C;
-    font-family: "Avenir Next";
+    
         font-size: 32px;
             line-height: 44px;	
             text-align: center;
         }
 
-        .network {
-            height:44px;
-        width: 206.9px;
-        background:#DAAB1D;
-        border:1px solid #41340C;
-            color: #41340C;
-            font-family: "Avenir Next";
-                font-size: 32px;
-                    line-height: 44px;	
+       
+
+                .rectangle-copy {	
+    
+                    height: 88px;	
+                    width: 368px;
+                    color:#EDE3C2;	
+                    border-radius: 3px;
+                    background-color: #DAAB1D;
+                    border:1px solid #41340C;
+                    margin-left:0;
+                
+                }
+                .with-use-my-tools-yo {	height: 342px;	width: 334px;	color: #41340C;		font-size: 28px;	line-height: 38px;}
+                
+                .why-use-my-tools-copy {	height: 38px;	width: 239px;	color: #1E3A46;		font-size: 28px;	font-weight: 600;	line-height: 38px;	text-align: center;}
+                .tired-of-not-remembe {	height: 66px;	width: 365px;	color: #41340C;		font-size: 24px;	font-weight: 600;	line-height: 33px;}
+                .tired-of-loaning-out {	height: 66px;	width: 479px;	color: #41340C;		font-size: 24px;	font-weight: 600;	line-height: 33px;}
+                .sign-up-now {
+                    height: 44px;
+                    width: 144.29px;
+                    color: #336277;
+                    font-family: "Avenir Next";
+                    font-size: 32px;
+                    font-weight: 600;
+                    line-height: 44px;
                     text-align: center;
                 }
+
+
+ p, .i-was-tired-of alway{
+    display: flex;
+    width: 250px;
+    margin-left: 60px;
+    font-size:1.8rem;
+    
+}
+
+.meet-our-users{
+    display:grid;
+margin-top:100px;
+    grid-template-columns:
+    grid-template-rows: 1fr 1fr 1fr;
+    
+    justify-content: center;
+    
+
+}
+.meet-our-users img{
+    width:241px;
+    height:241px;
+    display:flex;
+
+}
+.rectangle2{
+           width: 100%;
+               background-color: #EDE3C2;
+              
+    }
+    .when-you-create-an-a {
+        height: 325px;
+        width: 33%;
+        color: #41340C;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .a-tool-that-is-added {
         
+        width: 35%;
+        color: #41340C;
         
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .once-the-rental-peri {
+        height: 218px;
+        width: 32%;
+        color: #41340C;
+        
+        font-size: 18px;
+        line-height: 25px;
+    }
+.rectangle3{	height: 195px;	width: 1440px;	background-color: #488EAC;}
 
 
+//ABOUT CAROUSEL
 
-
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
