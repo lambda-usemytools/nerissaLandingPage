@@ -84,7 +84,7 @@ header img{
     border-left: 563px solid transparent;
     border-right:552px solid transparent;
     border-bottom: 297px solid #C0B594;
-    margin-top: -429px;
+    margin-top: -500px;
     margin-left: 100px;
     font-size: 18px;
   
@@ -94,10 +94,10 @@ header img{
 	
 	
 	color: #1E3A46;
-	display:inline;
+	
 	font-size: 1.8rem;
 	font-weight: 600;
-	line-height: 38px;
+	
     text-align: center;
     z-index:3;
 
@@ -105,22 +105,23 @@ header img{
 .container{
     display:flex;
 }
-join-today{
-    margin:0;
-    padding:0;
-    width:1px;
-    justify-content:center;
-    align-items: center;
-    text-align:center;
+img.join-today{
     
     
-}
+        position: relative;
+        width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }   
+
 .rectangle1 {
     display:flex;
 height: 300px;
     width: 100%;
     	background-color: #EDE3C2;
 justify-content: space-around;
+
 }
 button .rectangle1 {
     height: 48px;	width: 240px;	border-radius: 10px;	background-color: #488EAC;
@@ -135,11 +136,16 @@ button .rectangle1 {
     background-color:#C0B594;
 }
 
+       .rectangle-copy {	
+           height: 405px;	
+           width: 1040px;	
+           background-color: #C0B594;
+        float:left;
+    }
 
-
-       
-
-                
+            .rightmessage{
+                float:right;
+            }    
                 
                 
                 .with-use-my-tools-yo {	height: 342px;	width: 334px;	color: #41340C;		font-size: 28px;	line-height: 38px;}
@@ -147,15 +153,16 @@ button .rectangle1 {
                 .why-use-my-tools-copy {	height: 38px;	width: 239px;	color: #1E3A46;		font-size: 28px;	font-weight: 600;	line-height: 38px;	text-align: center;}
                 .tired-of-not-remembe {	height: 66px;	width: 365px;	color: #41340C;		font-size: 24px;	font-weight: 600;	line-height: 33px;}
                 .tired-of-loaning-out {	height: 66px;	width: 479px;	color: #41340C;		font-size: 24px;	font-weight: 600;	line-height: 33px;}
-                .sign-up-now {
-                    height: 44px;
-                    width: 144.29px;
+                
+                img.signup {
+                    float:right;
                     color: #336277;
-                    font-family: "Avenir Next";
-                    font-size: 32px;
-                    font-weight: 600;
-                    line-height: 44px;
-                    text-align: center;
+                    position: relative;
+                    width: 240px;
+            margin-left: auto;
+         margin-right: auto;
+            display: block;
+                    
                 }
 
 
@@ -193,7 +200,7 @@ button .rectangle1 {
 
 .meet-our-users{
     display:flex;
-margin-top:100px;
+margin-top:4px;
     justify-content: center;
     color: #1E3A46;	
      font-size: 28px;
@@ -209,32 +216,36 @@ margin-top:100px;
     display:flex;
     width: 100%;
  background-color: #EDE3C2;
-height: 325px;   
-    
+height: 486px;   
+}
     .when-you-create-an-a {
        
         width: 33%;
         color: #41340C;
         font-size: 18px;
-        line-height: 25px;
-    
+        
+    }
     .a-tool-that-is-added {
         
         width: 35%;
         color: #41340C;
         font-size: 18px;
-        line-height: 25px;
-    
+        
+    }
     .once-the-rental-peri {
         height: 218px;
         width: 32%;
         color: #41340C;
         font-size: 18px;
-        line-height: 25px;
+        
     
 }
-}
+
 .rectangle3{	height: 195px;	width: 1440px;	background-color: #488EAC;}
+.info{
+    width:100%;
+    height:500px;
+}
 /*About Page*/
 .about-container{
     max-width:970px;
