@@ -1,12 +1,9 @@
 //About Page
 .about-container{
-    max-width:800px;
+    max-width:1000px;
     margin: auto;
     padding: 0 30px;
-    @media @mobile{
-        width:90%;
-        margin:20px;
-    }
+    
   }
   #showcase{
     height: 250px;
@@ -14,7 +11,7 @@
     z-index:5;
   }
   #showcase h1{
-    font-size: 50px;
+    font-size: 30px;
     line-height: 1.3;
     position: relative;
     z-index:5;
@@ -42,16 +39,16 @@
   
   
   .triangle1 {
-    position:relative;
+    position:absolute;
     z-index: 4;
     width: 0; 
     height: 0; 
-    border-left: 550px solid transparent;
-    border-right:550px solid transparent;
+    border-left: 300px solid transparent;
+    border-right:300px solid transparent;
     border-bottom: 314px solid #EDE3C2;
-    margin-top: -331px;
-    margin-left: 79px;
-    font-size: 18px;
+    top: -331px;
+    left: 79px;
+    font-size: 1rem;
   
 }
 img.join-today{
@@ -64,41 +61,67 @@ img.join-today{
 
 .about-rectangle {
     display:flex;
-height: 586px;
     width: 600px;
         background-color: #EDE3C2;
-        @media @mobile{
-    justify-content: center;
-align-items:center;
-margin:20px auto;
+        
 }
-}  
+div{
+    color:#EBE5D3;
+}
    
   
-	p {display: inline;
+	p {display: block;
         width: 479px;
         margin-left: 8px;
-        font-size: 1.8rem;
+        font-size: 3.8rem;
     }
-@media @mobile {
+    .tab-nav {
+        .tag-links {
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+    
+          .aboutLink {
+            padding: 20px 40px;
+            background: lightgray;
+            border: 1px solid black;
+            cursor: pointer;
+          }
+    
+          // .aboutLink[data-tab='1'] {
+          //   color: red;
+          // }
+        }
+        .tab-page {
+          width: 100%;
+          margin-top: 20px;
+          background: lightgray;
+    
+          .page {
             padding: 20px;
-            .about-use-my-tools {
-                height: 27px;
-                width: 186px;
-                color: #EDE3C2;
-                font-family: "Avenir Next";
-                font-size: 20px;
-                font-weight: 600;
-                line-height: 27px;
-            }
+            border: 1px solid black;
+            display: none;
           }
+    
+          .change {
+            display: block;
+          }
+        }
+      }
+    
+    
+    
         
-          @media( min-width: 800px) {
+          
+        
+    footer{
+        width:500px;
+        p{
+            display:flex;
             font-size: 1.8rem;
-            padding: 0 10px;
-          }
         
-        
+        }
+    }    
 
 
 

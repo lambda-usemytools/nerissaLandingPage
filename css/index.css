@@ -1,6 +1,231 @@
-import html {
+/*
+// Color assignments 
+@font-color: @shark;
+@button-bg: @eastern-blue;
+@main-fc:  @brown;
+@navigation-background: @stanley;
+@footer-bg: @sandy-beach;
+
+// Colors
+@white: #FFFFFF;
+@stanley: #DAAB1D;
+@shark: #1E3A46
+@eastern-blue: #17A2B8;
+@sandy-beach: #FFEBCD;*/
+/*.center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+/*}
+
+.bordered{
+    border-top:dotted 1px @silver;
+    border-bottom:solid 2px @silver;
+
+}.button-creator(@width, @height, @bg-color, @font-color, @font-size) {
+	.border-radius(15px);
+	.center;
+	width: @width;
+	height: @height;
+	background-color: @bg-color;
+	color: @font-color;
+	border: 1px solid @silver;
+	cursor: pointer;
+	font-size: @font-size;*/
+@media (max-width: 500px) {
+  a {
+    width: 100%;
+  }
+  a:hover {
+    text-decoration: enable;
+    color: #1E3A46;
+  }
+}
+/*.custom-layout(@justify, @align){
+	display: flex;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+// usage
+.custom-layout(flex-end, center);
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
   font-size: 62.5%;
-  font-family: Avenir Next;
+}
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  width: 90%;
+  margin: 0 5%;
+}
+.logo {
+  width: 45px;
 }
 nav {
   background: #DAAB1D;
@@ -11,79 +236,75 @@ nav {
   justify-content: space-between;
   align-items: space-evenly;
 }
-ul {
-  display: flex;
-  margin-top: 40px;
-  width: 50%;
+nav ul {
+  margin-top: 30px;
+  width: 48%;
   justify-content: space-around;
   color: #1E3A45;
 }
-li {
+nav ul li {
   display: list-item;
   list-style-type: none;
 }
-a {
+nav ul li a {
   color: #1E3A45;
   text-decoration: none;
   font-size: 2rem;
   width: 100%;
 }
-a :visited {
+nav ul li a a :visited {
   color: #1E3A45;
 }
 .about {
   height: 27px;
   width: 61px;
   color: #1E3A46;
-  font-family: "Avenir Next";
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: bold;
   line-height: 27px;
+  margin-top: -34px;
+  margin-left: 159px;
 }
 .faq {
   height: 27px;
   width: 44px;
   color: #1E3A46;
-  font-family: "Avenir Next";
   font-size: 20px;
   font-weight: bold;
-  line-height: 27px;
 }
 .create-account {
   height: 27px;
   width: 149px;
   color: #1E3A46;
-  font-family: "Avenir Next";
   font-size: 20px;
   font-weight: bold;
-  line-height: 27px;
 }
 .sign-in {
   height: 27px;
   width: 67px;
   color: #1E3A46;
-  font-family: "Avenir Next";
   font-size: 20px;
   font-weight: bold;
-  line-height: 27px;
 }
 nav h1 {
-  color: #1E3A45;
+  color: #1E3A46;
   font-size: 3.2rem;
 }
 header img {
-  width: 100%;
+  width: 800px;
 }
 .triangle {
-  position: relative;
-  z-index: 4;
+  display: flex;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
   width: 0;
   height: 0;
-  border-left: 450px solid transparent;
-  border-right: 450px solid transparent;
-  border-bottom: 314px solid #C0B594;
-  margin-top: -345px;
-  margin-left: 109px;
+  border-left: 563px solid transparent;
+  border-right: 552px solid transparent;
+  border-bottom: 297px solid #C0B594;
+  top: 233px;
+  left: 100px;
   font-size: 18px;
 }
 .organize-your-tools {
@@ -94,23 +315,66 @@ header img {
   line-height: 8px;
   text-align: center;
   z-index: 3;
+  position: absolute;
 }
-join-today {
+@media (max-width: 500px) {
+  nav {
+    display: block;
+  }
+  nav .triangle {
+    display: block;
+    width: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 233px;
+    left: -89px;
+    font-size: 18px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #C0B594;
+  }
+  nav .organize-your-tools {
+    width: 50%;
+  }
+  .organize-your-tools {
+    width: 50%;
+  }
+}
+.rectangle3 {
+  justify-content: center;
+  width: 1440px;
+  background-color: #488EAC;
+  margin: 40px;
+}
+.rectangle3 .info {
   width: 100%;
-  text-align: center;
-  margin: 20px auto;
+  height: 500px;
 }
-.rectangle {
+.container {
+  width: 100%;
+  display: flex;
+}
+.container img.join-today {
+  position: relative;
+  width: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  float: right;
+}
+.container img.join-today .rectangle1 {
   display: flex;
   height: 300px;
   width: 100%;
   background-color: #EDE3C2;
+  justify-content: space-around;
 }
-.rectangle-copy {
-  width: 168px;
-  border: 1px solid #6E5710;
-  border-radius: 3px;
-  background-color: #DAAB1D;
+.container img.join-today .rectangle1 .rectangle {
+  height: 362px;
+  width: 368px;
+  background-color: #C0B594;
 }
 .with-use-my-tools-yo {
   height: 342px;
@@ -119,70 +383,77 @@ join-today {
   font-size: 28px;
   line-height: 38px;
   background-color: #C0B594;
+  z-index: 2;
 }
-.rectangle-copy1 {
+.with-use-my-tools-yo .signup {
+  display: block;
+  position: relative;
+  width: 240px;
+  margin-left: 500px;
+}
+.rectangle-copy {
   height: 405px;
   width: 1440px;
   background-color: #C0B594;
 }
-.meet-our-users {
-  width: 800px;
+.rectangle-copy .meet-our-users {
+  width: 100%;
   color: #1E3A46;
   font-size: 28px;
   font-weight: 600;
   text-align: center;
   display: flex;
 }
-.i-was-tired-of-alway {
+.rectangle-copy .meet-our-users .i-was-tired-of-alway {
   width: 100px;
   color: #41340C;
   display: flex;
   font-size: 18px;
   line-height: 25px;
 }
-p,
-.i-was-tired-of-alway {
+.rectangle-copy .meet-our-users .i-was-tired-of-alway p,
+.rectangle-copy .meet-our-users .i-was-tired-of-alway .i-was-tired-of-alway {
   display: flex;
   width: 250px;
   margin-left: 60px;
 }
-.rectangle {
-  height: 405px;
-  width: 1440px;
+.rectangle2 {
+  height: 500px;
+  width: 100%;
   background-color: #EDE3C2;
+  margin-top: -300px;
+  border: 1px solid;
+  justify-content: center;
+  align-items: center;
 }
-.rectangle .how-it-works {
+.rectangle2 .how-it-works {
   height: 38px;
   width: 175px;
   color: #1E3A46;
-  font-family: "Avenir Next";
   font-size: 28px;
   font-weight: 600;
   line-height: 38px;
   text-align: center;
 }
-.rectangle .how-it-works .when-you-create-an-a {
+.rectangle2 .how-it-works .when-you-create-an-a {
   height: 325px;
   width: 400px;
   color: #41340C;
-  font-family: "Avenir Next";
   font-size: 18px;
-  line-height: 25px;
 }
-.rectangle .how-it-works .when-you-create-an-a .a-tool-that-is-added {
+.rectangle2 .how-it-works .when-you-create-an-a .a-tool-that-is-added {
   height: 300px;
   width: 400px;
   color: #41340C;
 }
-.rectangle .how-it-works .when-you-create-an-a .a-tool-that-is-added .once-the-rental-peri {
-  height: 218px;
+.rectangle2 .how-it-works .when-you-create-an-a .a-tool-that-is-added .once-the-rental-peri {
   width: 400px;
   color: #41340C;
   font-size: 18px;
   line-height: 25px;
 }
 .about-container {
-  max-width: 970px;
+  max-width: 1000px;
   margin: auto;
   padding: 0 30px;
 }
@@ -192,7 +463,7 @@ p,
   z-index: 5;
 }
 #showcase h1 {
-  font-size: 50px;
+  font-size: 30px;
   line-height: 1.3;
   position: relative;
   z-index: 5;
@@ -224,22 +495,145 @@ p,
   }
 }
 .triangle1 {
+  position: absolute;
+  z-index: 4;
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-bottom: 314px solid #EDE3C2;
+  top: -331px;
+  left: 79px;
+  font-size: 1rem;
+}
+img.join-today {
   position: relative;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.about-rectangle {
+  display: flex;
+  width: 600px;
+  background-color: #EDE3C2;
+}
+div {
+  color: #EBE5D3;
+}
+p {
+  display: block;
+  width: 479px;
+  margin-left: 8px;
+  font-size: 3.8rem;
+}
+.tab-nav .tag-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.tab-nav .tag-links .aboutLink {
+  padding: 20px 40px;
+  background: lightgray;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.tab-nav .tab-page {
+  width: 100%;
+  margin-top: 20px;
+  background: lightgray;
+}
+.tab-nav .tab-page .page {
+  padding: 20px;
+  border: 1px solid black;
+  display: none;
+}
+.tab-nav .tab-page .change {
+  display: block;
+}
+footer {
+  width: 500px;
+}
+footer p {
+  display: flex;
+  font-size: 1.8rem;
+}
+html {
+  font-size: 62.5%;
+  font-family: Open sans-serif;
+}
+.about-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 30px;
+}
+@media (max-width: 500px) {
+  .about-container {
+    width: 90%;
+    margin: 20px;
+  }
+}
+#showcase {
+  height: 250px;
+  position: relative;
+  z-index: 5;
+}
+#showcase h1 {
+  font-size: 5rem;
+  line-height: 1.3;
+  position: relative;
+  z-index: 5;
+  animation-name: heading;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+}
+@keyframes heading {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: 30px;
+  }
+}
+#content {
+  position: relative;
+  animation-name: content;
+  animation-duration: 10s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes content {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    right: 566px;
+  }
+}
+.triangle1 {
+  position: absolute;
   z-index: 4;
   width: 0;
   height: 0;
   border-left: 550px solid transparent;
   border-right: 550px solid transparent;
   border-bottom: 314px solid #EDE3C2;
-  margin-top: -351px;
-  margin-left: 109px;
+  top: -233px;
+  left: 89px;
   font-size: 18px;
 }
 .about-rectangle {
   display: flex;
   height: 586px;
-  width: 100%;
+  width: 600px;
   background-color: #EDE3C2;
+}
+@media (max-width: 500px) {
+  .about-rectangle {
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+  }
 }
 .join-today {
   height: 33px;
@@ -248,26 +642,11 @@ p,
   font-size: 24px;
   font-weight: 600;
   line-height: 33px;
-  text-align: center;
+  z-index: 7;
 }
-.rectangle3 {
-  height: 195px;
-  width: 1440px;
-  background-color: #488EAC;
-}
-@media (min-width: 500px) {
-  padding: 20px;
-  .about-use-my-tools {
-    height: 27px;
-    width: 186px;
-    color: #EDE3C2;
-    font-family: "Avenir Next";
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 27px;
-  }
-}
-@media (min-width: 800px) {
+p {
+  display: flex;
+  width: 479px;
+  margin-left: 8px;
   font-size: 1.8rem;
-  padding: 0 10px;
 }

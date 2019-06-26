@@ -1,4 +1,5 @@
-
+.logo{width:45px;
+}
 
 nav{
     background:@navigation-background;
@@ -11,8 +12,8 @@ nav{
 
 ul{
    
-    margin-top:40px;
-    width: 50%;
+    margin-top:30px;
+    width: 48%;
     justify-content: space-around;
     color:#1E3A45;
 
@@ -39,10 +40,13 @@ a :visited{
     height: 27px;
         width: 61px;
             color:@font-color;
-        font-size: 20px;
+        font-size: 1rem;
             font-weight: bold;	
             line-height: 27px;
-        }
+            margin-top: -34px;
+    margin-left: 159px;
+}
+        
 .faq {
 	height: 27px;
 	width: 44px;
@@ -50,7 +54,7 @@ a :visited{
 
 	font-size: 20px;
 	font-weight: bold;
-	line-height: 27px;
+
 }
 .create-account {
 	height: 27px;
@@ -59,7 +63,7 @@ a :visited{
 	
 	font-size: 20px;
 	font-weight: bold;
-	line-height: 27px;
+	
 }
 .sign-in {
 	height: 27px;
@@ -67,7 +71,7 @@ a :visited{
 	color:@font-color;
 	font-size: 20px;
 	font-weight: bold;
-	line-height: 27px;
+	
 }
 nav h1{
     color: @font-color;
@@ -80,15 +84,15 @@ header img{
 .triangle {
     display:flex;
     text-align:center;
-    position:relative;
+    position: absolute;;
     z-index: 2;
     width: 0; 
     height: 0; 
     border-left: 563px solid transparent;
     border-right:552px solid transparent;
     border-bottom: 297px solid #C0B594;
-    margin-top: -429px;
-    margin-left: 100px;
+    top: 233px;
+    left: 100px;
     font-size: 18px;
   
 }
@@ -101,12 +105,39 @@ header img{
 	line-height: 8px;
     text-align: center;
     z-index:3;
-}
-img.join-today{
-    position: relative;
-    width: 240px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
+    position:absolute;
 }
 
+
+@media @mobile{
+    nav{
+        display:block;
+        .triangle{
+            display:block;
+            width:50%;
+            position: absolute;
+            z-index: 2;
+                       
+                        
+                        top: 233px;
+                        left: -89px;
+                        font-size: 18px;
+                        
+                        width:0;
+                        height:0;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-bottom: 10px solid #C0B594;
+                        
+                    }
+                .organize-your-tools{
+                    width:50%;
+                }
+                    }
+                    
+    .organize-your-tools{
+        width:50%;
+    }
+        }
+        
+    
