@@ -8,7 +8,6 @@
 
 nav{
     background:#DAAB1D;
-    	
     width: 100%;
     border:1px solid #979797;
     display:flex;
@@ -20,11 +19,12 @@ nav{
     padding:20px;
     margin:30px;
     align-items: center;
+    width:100%;
 }
 ul{
     display: inline-flex;
     margin-top:60px;
-    width: 75%;
+    width: 65%;
     justify-content: space-between;
     color:#1E3A45;
     align-items: center;
@@ -72,8 +72,7 @@ font-size: 20px;
 	height: 27px;
 	width: 67px;
 	color: #1E3A46;
-
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: bold;
 	line-height: 27px;
 }
@@ -170,13 +169,14 @@ justify-content: space-betweem;
 
 
 .container1{
-   max-width: 1140px;
+   width: 100%;
     background-color: #C0B594;
     align-items: center;
     position: relative;
     left: 4px;
-    height:250px;
-    font-size: 2rem;
+    height:350px;
+    font-size: 24px;
+   
 
 }
        
@@ -193,20 +193,20 @@ justify-content: space-betweem;
         margin-left: auto;
      margin-right: auto;
         display: block;
-        left:722px;
+        left:542px;
         bottom:10px;
                 
             }
 
 
         .container2{
-            max-width: 1140px;
+            width: 100%;
     position: relative;
     
             background-color: #E9E8E4;
             justify-content: space-evenly;
-            display: flex;
-            height:505px;
+            display: inline;
+            
                 color: #1E3A46;	
                  font-size: 28px;
                  font-weight: 600;		
@@ -231,7 +231,7 @@ justify-content: space-betweem;
             height: 150px;
             width: 240px;
             color: #41340C;
-            
+            margin-left:45px;
             font-size: 18px;
             
         }  
@@ -264,7 +264,7 @@ justify-content: space-betweem;
   
   .lady{
     width:230px;
-    height:100px;
+    
     flex:1;
     margin: 10px;
     padding:25px;
@@ -316,22 +316,30 @@ justify-content: space-betweem;
        
         
         color: #41340C;
-        font-size: 1rem;
+        font-size: -0.5rem;
+        width:33%;
+        margin-top:20px;
         
     }
     .a-tool-that-is-added {
         
         
         color: #41340C;
-        font-size: 1rem
-        
+        font-size: 1rem;
+        width:33%;
+        float:left;
+        margin-left:296px;
+        margin-top:-176px;
     }
     .once-the-rental-peri {
         
     
         color: #41340C;
         font-size: 1rem;
-        
+        width:33%;
+        float:right;
+        margin-left: -254px;
+        margin-top:13px;
     
 }
 .join-today1{
@@ -456,7 +464,7 @@ margin:10px auto;
       }
     
   
-
+/*Tablet*/
 
 @media(max-width:800px){
     html{
@@ -467,21 +475,45 @@ margin:10px auto;
     nav{
         width:100%;
     }
-    .container{
-        width:100%;
-
+    .triangle {
+        position: absolute;
+        z-index: 4;
+        width: 0;
+        height: 0;
+        border-left: 400px solid transparent;
+        border-right: 400px solid transparent;
+        border-bottom: 205px solid #C0B594;
+        margin-top: -206px;
+        margin-left: 12px;
+        font-size: -363px;
     }
-.container1{
-    width:100%;
-}
+    
+    .container1{
+        font-size:1.4rem;
+        color:#1E3A45
+    }
+
+
 .container2{
     width:100%;
 }
-.rectangle3{
+.container3{
     width:100%;
 }
+.rectangle3{
+    width:800px;
 }
+}
+
+/*Mobile*/
+
 @media(max-width:500px){
+    html{
+        display:flex;
+        flex-direction: column;}
+    .logo{
+        display:flex;
+    }
     nav{
         display:flex;
         flex-direction: column;
@@ -490,10 +522,16 @@ margin:10px auto;
         align-items: center;
 
     }
+     ul{
+        display:flex;
+        flex-direction: column;
+        color:#1E3A46;
+        text-align:center;
+    }
   .join-today{
       top:-70px;
       position: relative;
-      left:-240px;
+      left:-250px;
       margin-right:auto;
   }
     
@@ -506,59 +544,105 @@ margin:10px auto;
     height: 0;
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
-    border-bottom: 99px solid #C0B594;
-    margin-top: -100px;
+    border-bottom: 159px solid #C0B594;
+    margin-top: -155px;
     margin-left: 65px;
     font-size: 1px;
     }
-    .container p{
+    .none{
         display:none;
-        height:600px;
+    
         position:relative;
         top:5px;
     }
     .list-tools{
         width:500px;
         position:relative;
+    
+        
     }
     .network img{
         width:500px;
         position:relative;
 
     }
-    .container .borrow{
+    img.borrow{
         width:500px;
         position:relative;
+   
+    
 
     }
     .container1{
-        height:350px;
+    
+        width:500px;
+    font-size: 2rem;
+    text-align:center;
+    }
+    .container1 img{
+        display:none;
     }
     .container2{
-        height:600px;
+    
         padding:15px;
+        width:500px;
+        margin-top:5px;
+        height:500px;
     }
-.container2 img{
+    .lady{display:none;}
+    .secondguy{
+        width:200px;
+        height:200px;
+        float:right;
+    }
+    .with-use-my-tools-i{
+        float:left;
+        margin-left:32px;
+    }
+    .container2 .guy{
+        display:none;
+    }
+    .i-was-tired-of-alway{
+        display:none;
+    }
+.it-is-so-convenient{
+display:none;
+}
+.container3{
+    width:500px;
+}
+    
+.when-you-create-an-a{
     display:none;
+}
+.a-tool-that-is-added{
+    margin-top:2px;
+    float:left;
+    margin-left:92px;
+    margin-bottom:15px;
+    font-size:28px;
+    display:block;
+    width:345px;
+}
+.once-the-rental-peri{
+display:none;
 }
 .container3 img{
     display:none;
+    height:800px;
+
 
 }
 .rectangle3{
     display:flex;
     max-width:500px;
-height:400px;
-margin-left:auto;
-margin-right:auto;
+height:200px;
+font-size:0.5px;
+
+
 
 
 }
-.rectangle3 .info p{
-text-align: center;
-padding:5px;
-margin-left:75px;
 
-}
 
 }
