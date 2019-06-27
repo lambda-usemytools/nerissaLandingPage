@@ -97,7 +97,7 @@ header img{
     border-left: 450px solid transparent;
     border-right: 450px solid transparent;
     border-bottom: 209px solid #C0B594;
-    margin-top: -211px;
+    margin-top: -209px;
     margin-left: 65px;
     font-size: 18px;
 }
@@ -141,7 +141,7 @@ header p{
     justify-content: center;
     align-items: center;
     position: relative;
-    height:420px;
+    height:490px;
     margin-left:35px;
     line-height: 38px;
     
@@ -462,5 +462,86 @@ margin:10px auto;
     
     text-align:center; 
     }
+
+}
+@media(max-width:500px){
+    nav{
+        display:flex;
+        flex-direction: column;
+        max-width:500px;
+        justify-content:center;
+        align-items: center;
+
+    }
+  .join-today{
+      top:-70px;
+      position: relative;
+      left:-240px;
+      margin-right:auto;
+  }
+    
+    header p{display:none;}
+    .triangle{
+        max-width:200px;
+        position: absolute;
+    z-index: 10;
+    width: 0;
+    height: 0;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 99px solid #C0B594;
+    margin-top: -100px;
+    margin-left: 65px;
+    font-size: 1px;
+    }
+    .container p{
+        display:none;
+        height:600px;
+        position:relative;
+        top:5px;
+    }
+    .list-tools{
+        width:500px;
+        position:relative;
+    }
+    .network img{
+        width:500px;
+        position:relative;
+
+    }
+    .container .borrow{
+        width:500px;
+        position:relative;
+
+    }
+    .container1{
+        height:350px;
+    }
+    .container2{
+        height:600px;
+        padding:15px;
+    }
+.container2 img{
+    display:none;
+}
+.container3 img{
+    display:none;
+
+}
+.rectangle3{
+    display:flex;
+    max-width:500px;
+height:400px;
+margin-left:auto;
+margin-right:auto;
+
+
+}
+.rectangle3 .info p{
+text-align: center;
+padding:5px;
+margin-left:75px;
+
+}
 
 }
