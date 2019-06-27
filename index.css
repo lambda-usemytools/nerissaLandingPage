@@ -336,10 +336,11 @@ justify-content: space-betweem;
 }
 .join-today1{
     position:relative;
+    bottom:-15px;
 }
 .rectangle3{	
-    display:flex;
-    height: 195px;	
+    
+    height: 175px;	
     width: 100%;	
     background-color: #488EAC;
     color:#EDE3C2;
@@ -350,9 +351,10 @@ justify-content: space-betweem;
 }
 .info {
     width:580px;
-    padding:20px;
-    
+    padding:30px;
+    display:flex;
     color:#EDE3C2;
+    margin:20px;
 }
 
 
@@ -456,13 +458,28 @@ margin:10px auto;
   
 
 
-@media(max-width:1000px){
+@media(max-width:800px){
     html{
     font-size: 0.6rem;
     
     text-align:center; 
     }
+    nav{
+        width:100%;
+    }
+    .container{
+        width:100%;
 
+    }
+.container1{
+    width:100%;
+}
+.container2{
+    width:100%;
+}
+.rectangle3{
+    width:100%;
+}
 }
 @media(max-width:500px){
     nav{
