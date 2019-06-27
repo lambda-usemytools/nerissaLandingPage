@@ -7,52 +7,30 @@
 @import "homepage.less";
 @import "about.less";
 
-html{
-    font-size:62.5%;
-    font-family:Open sans-serif;
-}
 
-//About Page
-.about-container{
-    max-width:800px;
-    margin: auto;
-    padding: 0 30px;
-    @media @mobile{
-        width:90%;
-        margin:20px;;
-    }
-  }
-  #showcase{
-    height: 250px;
-    position:relative;
-    z-index:5;
-  }
-  #showcase h1{
-    font-size: 5.0rem;
-    line-height: 1.3;
-    position: relative;
-    z-index:5;
-    animation-name:heading;
-    animation-duration:30s;
-    animation-fill-mode:forwards;
 
+  
+  
+  
+.triangle {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 297px solid #C0B594;
+    top: -297px;
+    left: 129px;
+    font-size: 18px;
   }
-  @keyframes heading{
-    0%{top:-60px}
-    100%{top:30px}
-  }
-  #content{
-      
-    position:relative;
-    animation-name: content;
-    animation-duration:10s;
-    animation-delay: 4s;
-    animation-fill-mode:forwards;
-  }
-  @keyframes content{
-    0%{left:-1000px}
-    100%{right:566px}
-  }
+  
+   
+  
+  
+  
   
   
   .triangle1 {
@@ -60,13 +38,23 @@ html{
     z-index: 4;
     width: 0; 
     height: 0; 
-    border-left: 550px solid transparent;
-    border-right:550px solid transparent;
-    border-bottom: 314px solid #EDE3C2;
-    top: -233px;
+    border-left: 300px solid transparent;
+    border-right:300px solid transparent;
+    border-bottom: 4px solid #EDE3C2;
+    top: -2px;
     left: 89px;
-    font-size: 18px;
-  
+    font-size: 1rem;
+  @media @mobile {
+      .triangle1{
+        border-left: 200px solid transparent;
+        border-right:200px solid transparent;
+        border-bottom: 175px solid #EDE3C2;
+        top: -169px;
+        left: 89px;
+        font-size: 1rem;
+      }
+      
+  }
 }
 
 .about-rectangle {
@@ -86,11 +74,8 @@ margin:20px auto;
 	height: 33px;
 	width: 122px;
 	color: #EDE3C2;
-
 	font-size: 24px;
 	font-weight: 600;
-	line-height: 33px;
-    
     z-index:7;
 
 }

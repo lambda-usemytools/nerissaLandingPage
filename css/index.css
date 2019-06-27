@@ -196,14 +196,14 @@ h5 {
   font-family: 'Open Sans', cursive;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   padding-bottom: 10px;
 }
 h4 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   padding-bottom: 10px;
 }
 p {
@@ -215,17 +215,24 @@ img {
   max-width: 100%;
   height: auto;
 }
+a {
+  color: #1E3A45;
+}
 .container {
-  max-width: 800px;
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
-  width: 90%;
+  max-width: 90%;
   margin: 0 5%;
+  display: flex;
 }
 .logo {
-  width: 45px;
+  width: 50%;
+  display: flex;
+  padding: 15px;
+  margin: 20px;
 }
 nav {
   background: #DAAB1D;
@@ -255,59 +262,68 @@ nav ul li a {
 nav ul li a a :visited {
   color: #1E3A45;
 }
-.about {
+nav ul join-today {
+  height: 33px;
+  width: 122px;
+  color: #EDE3C2;
+  font-family: "Avenir Next";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  text-align: center;
+}
+nav .about {
   height: 27px;
   width: 61px;
   color: #1E3A46;
   font-size: 1rem;
   font-weight: bold;
-  line-height: 27px;
   margin-top: -34px;
   margin-left: 159px;
 }
-.faq {
+nav .faq {
   height: 27px;
   width: 44px;
   color: #1E3A46;
   font-size: 20px;
   font-weight: bold;
 }
-.create-account {
+nav .create-account {
   height: 27px;
   width: 149px;
   color: #1E3A46;
   font-size: 20px;
   font-weight: bold;
 }
-.sign-in {
+nav .sign-in {
   height: 27px;
   width: 67px;
   color: #1E3A46;
   font-size: 20px;
   font-weight: bold;
 }
-nav h1 {
+nav nav h1 {
   color: #1E3A46;
-  font-size: 3.2rem;
+  font-size: 2.3rem;
 }
-header img {
+nav header img {
   width: 800px;
 }
-.triangle {
+nav .triangle {
   display: flex;
   text-align: center;
   position: absolute;
-  z-index: 2;
+  z-index: -1;
   width: 0;
   height: 0;
-  border-left: 563px solid transparent;
-  border-right: 552px solid transparent;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
   border-bottom: 297px solid #C0B594;
-  top: 233px;
-  left: 100px;
+  top: -597px;
+  left: 129px;
   font-size: 18px;
 }
-.organize-your-tools {
+nav .organize-your-tools {
   height: 0;
   width: 100%;
   color: #1E3A46;
@@ -318,28 +334,18 @@ header img {
   position: absolute;
 }
 @media (max-width: 500px) {
-  nav {
-    display: block;
+  nav nav a {
+    display: flex;
+    flex-direction: column;
   }
-  nav .triangle {
-    display: block;
-    width: 50%;
+}
+@media (max-width: 500px) {
+  .triangle {
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 10px;
     position: absolute;
-    z-index: 2;
-    top: 233px;
-    left: -89px;
-    font-size: 18px;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid #C0B594;
-  }
-  nav .organize-your-tools {
-    width: 50%;
-  }
-  .organize-your-tools {
-    width: 50%;
+    margin-left: 198px;
   }
 }
 .rectangle3 {
@@ -357,12 +363,13 @@ header img {
   display: flex;
 }
 .container img.join-today {
-  position: relative;
+  position: absolute;
   width: 40px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   float: right;
+  left: 200px;
 }
 .container img.join-today .rectangle1 {
   display: flex;
@@ -374,6 +381,9 @@ header img {
 .container img.join-today .rectangle1 .rectangle {
   height: 362px;
   width: 368px;
+  background-color: #C0B594;
+}
+.list-tools {
   background-color: #C0B594;
 }
 .with-use-my-tools-yo {
@@ -391,28 +401,15 @@ header img {
   width: 240px;
   margin-left: 500px;
 }
-.rectangle-copy {
-  height: 405px;
-  width: 1440px;
-  background-color: #C0B594;
-}
-.rectangle-copy .meet-our-users {
-  width: 100%;
-  color: #1E3A46;
-  font-size: 28px;
-  font-weight: 600;
-  text-align: center;
-  display: flex;
-}
-.rectangle-copy .meet-our-users .i-was-tired-of-alway {
+.i-was-tired-of-alway {
   width: 100px;
   color: #41340C;
   display: flex;
   font-size: 18px;
   line-height: 25px;
 }
-.rectangle-copy .meet-our-users .i-was-tired-of-alway p,
-.rectangle-copy .meet-our-users .i-was-tired-of-alway .i-was-tired-of-alway {
+.i-was-tired-of-alway p,
+.i-was-tired-of-alway .i-was-tired-of-alway {
   display: flex;
   width: 250px;
   margin-left: 60px;
@@ -457,14 +454,19 @@ header img {
   margin: auto;
   padding: 0 30px;
 }
+@media (max-width: 500px) {
+  .about-container {
+    width: 90%;
+    margin: 20px;
+  }
+}
 #showcase {
   height: 250px;
   position: relative;
   z-index: 5;
 }
 #showcase h1 {
-  font-size: 30px;
-  line-height: 1.3;
+  font-size: 2.3rem;
   position: relative;
   z-index: 5;
   animation-name: heading;
@@ -491,7 +493,7 @@ header img {
     left: -1000px;
   }
   100% {
-    right: 566px;
+    right: 766px;
   }
 }
 .triangle1 {
@@ -501,8 +503,8 @@ header img {
   height: 0;
   border-left: 300px solid transparent;
   border-right: 300px solid transparent;
-  border-bottom: 314px solid #EDE3C2;
-  top: -331px;
+  border-bottom: 214px solid #EDE3C2;
+  top: -231px;
   left: 79px;
   font-size: 1rem;
 }
@@ -558,69 +560,41 @@ footer p {
   display: flex;
   font-size: 1.8rem;
 }
-html {
-  font-size: 62.5%;
-  font-family: Open sans-serif;
-}
-.about-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 0 30px;
-}
-@media (max-width: 500px) {
-  .about-container {
-    width: 90%;
-    margin: 20px;
-  }
-}
-#showcase {
-  height: 250px;
-  position: relative;
-  z-index: 5;
-}
-#showcase h1 {
-  font-size: 5rem;
-  line-height: 1.3;
-  position: relative;
-  z-index: 5;
-  animation-name: heading;
-  animation-duration: 30s;
-  animation-fill-mode: forwards;
-}
-@keyframes heading {
-  0% {
-    top: -60px;
-  }
-  100% {
-    top: 30px;
-  }
-}
-#content {
-  position: relative;
-  animation-name: content;
-  animation-duration: 10s;
-  animation-delay: 4s;
-  animation-fill-mode: forwards;
-}
-@keyframes content {
-  0% {
-    left: -1000px;
-  }
-  100% {
-    right: 566px;
-  }
+.triangle {
+  display: flex;
+  text-align: center;
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-bottom: 297px solid #C0B594;
+  top: -297px;
+  left: 129px;
+  font-size: 18px;
 }
 .triangle1 {
   position: absolute;
   z-index: 4;
   width: 0;
   height: 0;
-  border-left: 550px solid transparent;
-  border-right: 550px solid transparent;
-  border-bottom: 314px solid #EDE3C2;
-  top: -233px;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-bottom: 4px solid #EDE3C2;
+  top: -2px;
   left: 89px;
-  font-size: 18px;
+  font-size: 1rem;
+}
+@media (max-width: 500px) {
+  .triangle1 .triangle1 {
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 175px solid #EDE3C2;
+    top: -169px;
+    left: 89px;
+    font-size: 1rem;
+  }
 }
 .about-rectangle {
   display: flex;
@@ -641,7 +615,6 @@ html {
   color: #EDE3C2;
   font-size: 24px;
   font-weight: 600;
-  line-height: 33px;
   z-index: 7;
 }
 p {
