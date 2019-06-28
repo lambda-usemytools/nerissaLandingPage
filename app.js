@@ -1,21 +1,19 @@
-const joinIn = document.querySelector('.join-today').onclick = function () {
+const joinIn = document.querySelector('.join-today');
+joinIn.addEventListener('click', () => {
   location.href = "https://gracious-ptolemy-4a8ec7.netlify.com/";
-};
-
-const createAcct = document.querySelector('.create-account');
-createAcct.addEventListener('mouseover',() =>{
-  alert('Don\'t forget to sign up for our weekly newletter!')
 });
 
-
-
+const createAcct = document.querySelector('.create-account');
+createAcct.addEventListener('click',() =>{
+  alert('Don\'t forget to sign up for our weekly newletter!')
+});
 
 
 class TabTag {
   
   constructor(tag) {
      
-    
+    this.tag =tag;
     this.tabPage = document.querySelector(`.page[data-tab='${tag.dataset.tab}']`);
     
     
@@ -49,8 +47,3 @@ class Page {
 const tags = document.querySelectorAll('.aboutLink');
 tags.forEach(tag => new TabTag(tag));
 
-
-const closeButton = document.querySelector('.quick');
-closeButton.addEventListener('doubleclick', (event) =>{
-  event.target.style.display = none;
-});

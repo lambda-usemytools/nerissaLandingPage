@@ -10,7 +10,17 @@ img.join-today{
     display: flex;
     float:right;
     left:200px;
-
+.container1{
+    color: #1e3a45;
+    width: 86%;
+    background-color: #c0b594;
+    align-items: center;
+    position: relative;
+    left: 4px;
+    height: 350px;
+    font-size: 24px;
+    margin-left: 54px;
+}
     .rectangle1 {
     display:flex;
 height: 300px;
@@ -44,30 +54,11 @@ height: 300px;
 
 }
                     
-   .i-was-tired-of-alway  {
-            
-            width: 100px;
-            color:@main-fc;
-            display:flex;
-            font-size: 18px;
-            line-height: 25px;
+
             
         
-           p, .i-was-tired-of-alway{
-        display: flex;
-    width: 250px;
-    margin-left: 60px;
-}
-}
         
-.rectangle2 {	
-  height: 500px;
-    width: 100%;	
-    background-color: #EDE3C2;
-    margin-top:-300px;
-    border: 1px solid;
-    justify-content: center;
-    align-items: center;
+
 .how-it-works {
 	height: 38px;
 	width: 175px;
@@ -100,7 +91,7 @@ height: 300px;
 } 
 }
 }
-}
+
 
      
 
@@ -181,6 +172,9 @@ height: 300px;
 .with-use-my-tools-i{
     display:none;
 }
+.sign-in{
+    display:none;
+}
 .container3{
     width:500px;
 }
@@ -209,8 +203,215 @@ font-size:0.5px;
 
       
   
+@media (max-width: 800px) {
+	html {
+		font-size: 0.6rem;
+
+		text-align: center;
+	}
+	nav {
+		width: 100%;
+	}
+	.triangle {
+		position: absolute;
+		z-index: 4;
+		width: 0;
+		height: 0;
+		border-left: 400px solid transparent;
+		border-right: 420px solid transparent;
+		border-bottom: 205px solid #c0b594;
+		margin-top: -206px;
+		margin-left: 1px;
+		font-size: -363px;
+	}
+	.container {
         
+        width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	}
+	
+
+	.container1 {
+		font-size: 1.4rem;
+        color: #1e3a45;
+        width: 80%;
+    background-color: #c0b594;
+    align-items: center;
+    position: relative;
+    left: 4px;
+    height: 350px;
+    font-size: 24px;
+    margin-left: 139px;
+	}
+	
+
+	.container2 {
+        width: 80%;
+        margin-left:142px;
+	}
+	.guy{
+	margin-top:45px;
+	margin-left:3px;
+	margin-bottom: 39px;
+	}
+	.lady{
+	margin-top:-105px;
+	margin-left:439px;
+	width:25%;
+
+	}
+	.secondguy{
+	margin-top:-423px;
+	margin-left:850px;
+	width:28%;
+	}
+	.container3 {
+		width: 80%;
+		margin-left: 145px;
+		text-align:center;
+		margin-top:-10px;
+	}
+	.rectangle3 {
+		width: 80%;
+		margin-left:143px;
+	}
+
+}      
+
+     /*Mobile*/
+
+@media @mobile {
+	html {
+		display: flex;
+		flex-direction: column;
+	}
+	.logo {
+		display: flex;
+	}
+	nav {
+		display: flex;
+		flex-direction: column;
+		max-width: 500px;
+		justify-content: center;
+		align-items: center;
+	}
+	ul {
+		display: flex;
+		flex-direction: column;
+		color: #1e3a46;
+		text-align: center;
+	}
+	.join-today {
+		top: -70px;
+		position: relative;
+		left: -250px;
+		margin-right: auto;
+	}
+
+	header p {
+		display: none;
+	}
+	.triangle {
+		max-width: 200px;
+		position: absolute;
+		z-index: 10;
+		width: 0;
+		height: 0;
+		border-left: 200px solid transparent;
+		border-right: 200px solid transparent;
+		border-bottom: 159px solid #c0b594;
+		margin-top: -155px;
+		margin-left: 65px;
+		font-size: 1px;
+	}
+	.none {
+		display: none;
+
+		position: relative;
+		top: 5px;
+	}
+	.list-tools {
+		width: 500px;
+		position: relative;
+	}
+	.network img {
+		width: 500px;
+		position: relative;
+	}
+	img.borrow {
+		width: 500px;
+		position: relative;
+	}
+	.container1 {
+		width: 500px;
+		font-size: 2rem;
+		text-align: center;
+	}
+	.guy{
+		display: none;
+	}
+	.container2 {
+		padding: 15px;
+		width: 500px;
+		margin-top: 5px;
+		height: 500px;
+	}
+	.lady {
+		display: none;
+	}
+	.secondguy {
+		width: 200px;
+		height: 200px;
+		float: right;
+	}
+	.with-use-my-tools-i {
+		float: left;
+		margin-left: 32px;
+	}
+	.container2 .guy {
+		display: none;
+	}
+	.i-was-tired-of-alway {
+		display: none;
+	}
+	.it-is-so-convenient {
+		display: none;
+	}
+	.container3 {
+		width: 500px;
+	}
+
+	.when-you-create-an-a {
+		display: none;
+	}
+	.a-tool-that-is-added {
+		margin-top: 2px;
+		float: left;
+		margin-left: 92px;
+		margin-bottom: 15px;
+		font-size: 28px;
+		display: block;
+		width: 345px;
+	}
+	.once-the-rental-peri {
+		display: none;
+	}
+	.container3 img {
+		display: none;
+		height: 800px;
+	}
+	.email {
+        display:inline-block;
+		
+		max-width: 500px;
+		height: 200px;
+		font-size: 0.5px;
+    }
     
-       
+}
+  
   
     
