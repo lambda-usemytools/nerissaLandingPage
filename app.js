@@ -50,3 +50,7 @@ const tags = document.querySelectorAll('.aboutLink');
 tags.forEach(tag => new TabTag(tag));
 
 
+const closeButton = document.querySelector('.quick');
+closeButton.addEventListener('doubleclick', (event) =>{
+  event.target.style.display = none;
+});
